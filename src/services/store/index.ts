@@ -9,11 +9,13 @@ import {
 import ingredientsReducer from '../slices/ingredients';
 import builderReducer from '../slices/builder';
 import ordersReducer from '../slices/orders';
+import feedsReducer from '../slices/feeds';
 
 export const rootReducer = combineReducers({
   ingredients: ingredientsReducer,
   builder: builderReducer,
-  orders: ordersReducer
+  orders: ordersReducer,
+  feeds: feedsReducer
 });
 // Заменить на импорт настоящего редьюсера
 

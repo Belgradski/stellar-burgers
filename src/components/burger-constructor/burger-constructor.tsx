@@ -14,10 +14,11 @@ export const BurgerConstructor: FC = () => {
   const onOrderClick = () => {
     if (!constructorItems.bun || orderRequest) return;
     const data = [
-      constructorItems.bun?._id,
-      ...constructorItems.ingredients.map((ingredient) => ingredient.id),
-      constructorItems.bun?._id
+      constructorItems.bun._id,
+      ...constructorItems.ingredients.map((ingredient) => ingredient._id),
+      constructorItems.bun._id
     ];
+
     dispatch(createOrder(data));
   };
   const closeOrderModal = () => {

@@ -52,10 +52,13 @@ export const fetchOrder = createAsyncThunk<TOrder, number>(
   }
 );
 
-export const fetchOrders = createAsyncThunk('orders/fetchOrders', async () => {
-  const response = await getOrdersApi();
-  return response;
-});
+export const fetchOrders = createAsyncThunk<TOrder[]>(
+  'orders/fetchOrders',
+  async () => {
+    const response = await getOrdersApi();
+    return response;
+  }
+);
 
 const slice = createSlice({
   name: 'orders',
@@ -82,12 +85,12 @@ const slice = createSlice({
         state.error = null;
       })
       .addCase(fetchOrders.fulfilled, (state, action) => {
-        state.isOrderLoading = false;
+        state.isOrdersLoading = false;
         state.error = null;
         state.data = action.payload;
       })
       .addCase(fetchOrders.rejected, (state, action) => {
-        state.isOrderLoading = false;
+        state.isOrdersLoading = false;
         state.error = action.error;
       })
       .addCase(createOrder.pending, (state) => {
