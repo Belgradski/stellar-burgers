@@ -18,6 +18,7 @@ import { ProtectedRoute } from '../protected-route';
 import { useEffect } from 'react';
 import { useDispatch } from '../../services/store';
 import { fetchIngredients } from '../../services/slices/ingredients';
+import { resetOrderModalData } from '../../services/slices/orders';
 
 const App = () => {
   const location = useLocation();
@@ -27,6 +28,7 @@ const App = () => {
 
   const handleModalClose = () => {
     navigate(-1);
+    dispatch(resetOrderModalData());
   };
 
   useEffect(() => {
