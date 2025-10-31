@@ -10,12 +10,14 @@ import ingredientsReducer from '../slices/ingredients';
 import builderReducer from '../slices/builder';
 import ordersReducer from '../slices/orders';
 import feedsReducer from '../slices/feeds';
+import userReducer from '../slices/user';
 
 export const rootReducer = combineReducers({
   ingredients: ingredientsReducer,
   builder: builderReducer,
   orders: ordersReducer,
-  feeds: feedsReducer
+  feeds: feedsReducer,
+  user: userReducer
 });
 // Заменить на импорт настоящего редьюсера
 
