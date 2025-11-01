@@ -36,7 +36,6 @@ export const createOrder = createAsyncThunk<
   if (!response?.success) {
     return rejectWithValue(response);
   }
-
   return { order: response.order, name: response.name };
 });
 

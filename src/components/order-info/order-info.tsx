@@ -10,9 +10,13 @@ export const OrderInfo: FC = () => {
   const dispatch = useDispatch();
   const { number } = useParams<{ number: string }>();
   /** TODO: взять переменные orderData и ingredients из стора */
-  const { orderModalData: orderData } = useSelector((state) => state.orders);
+  const { orderModalData: orderData, isOrderLoading } = useSelector(
+    (state) => state.orders
+  );
 
-  const { data: ingredients } = useSelector((state) => state.ingredients);
+  const { data: ingredients, isIngredientsLoading } = useSelector(
+    (state) => state.ingredients
+  );
 
   useEffect(() => {
     dispatch(fetchOrder(Number(number)));
@@ -60,8 +64,12 @@ export const OrderInfo: FC = () => {
     };
   }, [orderData, ingredients]);
 
-  if (!orderInfo) {
+  if (!isIngredientsLoading || !isOrderLoading) {
     return <Preloader />;
+  }
+
+  if (!orderInfo) {
+    return null;
   }
 
   return <OrderInfoUI orderInfo={orderInfo} />;
