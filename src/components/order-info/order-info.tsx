@@ -64,12 +64,8 @@ export const OrderInfo: FC = () => {
     };
   }, [orderData, ingredients]);
 
-  if (!isIngredientsLoading || !isOrderLoading) {
-    return <Preloader />;
-  }
-
   if (!orderInfo) {
-    return null;
+    return <Preloader />;
   }
 
   return <OrderInfoUI orderInfo={orderInfo} />;
