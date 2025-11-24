@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1763995992573" clover="3.2.0">
-  <project timestamp="1763995992573" name="All files">
-    <metrics statements="776" coveredstatements="388" conditionals="18" coveredconditionals="18" methods="50" coveredmethods="13" elements="844" coveredelements="419" complexity="0" loc="776" ncloc="776" packages="7" files="9" classes="9"/>
+<coverage generated="1764007370071" clover="3.2.0">
+  <project timestamp="1764007370071" name="All files">
+    <metrics statements="776" coveredstatements="403" conditionals="24" coveredconditionals="24" methods="50" coveredmethods="16" elements="850" coveredelements="443" complexity="0" loc="776" ncloc="776" packages="7" files="9" classes="9"/>
     <package name="services.slices">
-      <metrics statements="31" coveredstatements="31" conditionals="7" coveredconditionals="7" methods="20" coveredmethods="7"/>
+      <metrics statements="31" coveredstatements="31" conditionals="9" coveredconditionals="9" methods="20" coveredmethods="9"/>
       <file name="index.ts" path="E:\code\Yandex\stellar-burgers\src\services\slices\index.ts">
-        <metrics statements="31" coveredstatements="31" conditionals="7" coveredconditionals="7" methods="20" coveredmethods="7"/>
+        <metrics statements="31" coveredstatements="31" conditionals="9" coveredconditionals="9" methods="20" coveredmethods="9"/>
         <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
+        <line num="2" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="3" count="1" type="cond" truecount="1" falsecount="0"/>
         <line num="4" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
         <line num="6" count="1" type="cond" truecount="2" falsecount="0"/>
@@ -156,9 +156,9 @@
       </file>
     </package>
     <package name="services.slices.ingredients">
-      <metrics statements="48" coveredstatements="33" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <metrics statements="48" coveredstatements="48" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
       <file name="index.ts" path="E:\code\Yandex\stellar-burgers\src\services\slices\ingredients\index.ts">
-        <metrics statements="48" coveredstatements="33" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <metrics statements="48" coveredstatements="48" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -188,22 +188,22 @@
         <line num="27" count="1" type="stmt"/>
         <line num="28" count="1" type="stmt"/>
         <line num="29" count="1" type="stmt"/>
-        <line num="30" count="1" type="stmt"/>
-        <line num="31" count="0" type="stmt"/>
-        <line num="32" count="0" type="stmt"/>
-        <line num="33" count="0" type="stmt"/>
-        <line num="34" count="0" type="stmt"/>
-        <line num="35" count="0" type="stmt"/>
-        <line num="36" count="0" type="stmt"/>
-        <line num="37" count="0" type="stmt"/>
-        <line num="38" count="0" type="stmt"/>
-        <line num="39" count="0" type="stmt"/>
-        <line num="40" count="0" type="stmt"/>
-        <line num="41" count="0" type="stmt"/>
-        <line num="42" count="0" type="stmt"/>
-        <line num="43" count="0" type="stmt"/>
-        <line num="44" count="0" type="stmt"/>
-        <line num="45" count="0" type="stmt"/>
+        <line num="30" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="32" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="36" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="41" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="42" count="1" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
         <line num="46" count="1" type="stmt"/>
         <line num="47" count="1" type="stmt"/>
         <line num="48" count="1" type="stmt"/>
