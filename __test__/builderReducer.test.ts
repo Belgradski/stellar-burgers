@@ -97,26 +97,29 @@ describe('Тестирование builderReducer', () => {
     });
 
     test('Удаление ингредиента', () => {
-        const _initialState = {
-            bun: null,
-            ingredients: [ingredient1MockData, ingredient2MockData]
-        }
-        const state = reducer(_initialState, removeIngredient(ingredient1MockData.id))
+      const _initialState = {
+        bun: null,
+        ingredients: [ingredient1MockData, ingredient2MockData]
+      };
+      const state = reducer(
+        _initialState,
+        removeIngredient(ingredient1MockData.id)
+      );
 
-        expect(state.ingredients).toHaveLength(1);
-        expect(state.ingredients[0]).toEqual(ingredient2MockData);
-        expect(state.bun).toBeNull();
+      expect(state.ingredients).toHaveLength(1);
+      expect(state.ingredients[0]).toEqual(ingredient2MockData);
+      expect(state.bun).toBeNull();
     });
     test('Очистка конструктора', () => {
-        const _initialState = {
-            bun: bunMockData,
-            ingredients: [ingredient1MockData, ingredient2MockData]
-        }
+      const _initialState = {
+        bun: bunMockData,
+        ingredients: [ingredient1MockData, ingredient2MockData]
+      };
 
-        const state = reducer(_initialState, resetConstructor());
+      const state = reducer(_initialState, resetConstructor());
 
-        expect(state.ingredients).toHaveLength(0);
-        expect(state.bun).toBeNull();
-    })
+      expect(state.ingredients).toHaveLength(0);
+      expect(state.bun).toBeNull();
+    });
   });
 });
