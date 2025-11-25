@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1764072808941" clover="3.2.0">
-  <project timestamp="1764072808942" name="All files">
-    <metrics statements="827" coveredstatements="552" conditionals="62" coveredconditionals="60" methods="53" coveredmethods="32" elements="942" coveredelements="644" complexity="0" loc="827" ncloc="827" packages="9" files="11" classes="11"/>
+<coverage generated="1764098915692" clover="3.2.0">
+  <project timestamp="1764098915692" name="All files">
+    <metrics statements="829" coveredstatements="554" conditionals="62" coveredconditionals="60" methods="53" coveredmethods="32" elements="944" coveredelements="646" complexity="0" loc="829" ncloc="829" packages="9" files="11" classes="11"/>
     <package name="services.middlewares.orders">
       <metrics statements="14" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
       <file name="index.tsx" path="E:\code\Yandex\stellar-burgers\src\services\middlewares\orders\index.tsx">
@@ -541,9 +541,9 @@
       </file>
     </package>
     <package name="services.store">
-      <metrics statements="37" coveredstatements="37" conditionals="1" coveredconditionals="1" methods="2" coveredmethods="1"/>
+      <metrics statements="39" coveredstatements="39" conditionals="1" coveredconditionals="1" methods="2" coveredmethods="1"/>
       <file name="index.ts" path="E:\code\Yandex\stellar-burgers\src\services\store\index.ts">
-        <metrics statements="37" coveredstatements="37" conditionals="1" coveredconditionals="1" methods="2" coveredmethods="1"/>
+        <metrics statements="39" coveredstatements="39" conditionals="1" coveredconditionals="1" methods="2" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -581,6 +581,8 @@
         <line num="35" count="1" type="stmt"/>
         <line num="36" count="1" type="stmt"/>
         <line num="37" count="1" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
       </file>
     </package>
     <package name="utils">
