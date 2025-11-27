@@ -1,4 +1,5 @@
 import { rootReducer, store } from '../src/services/store';
+import { expect } from '@jest/globals';
 
 describe('Тестирование rootReducer', () => {
   test('Вызов rootReducer с UNKNOWN_ACTION и undefined возвращает предыдущее состояние хранилища', () => {

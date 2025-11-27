@@ -5,6 +5,7 @@ import {
   resetOrderModalData,
   ordersInitialState
 } from '../src/services/slices';
+import { expect } from '@jest/globals';
 
 import reducer from '../src/services/slices/orders';
 

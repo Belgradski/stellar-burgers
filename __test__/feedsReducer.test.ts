@@ -1,6 +1,7 @@
 import { fetchFeeds, feedsInitialState } from '../src/services/slices';
 
 import reducer from '../src/services/slices/feeds';
+import { expect } from '@jest/globals';
 
 const feedsMockData = {
   orders: [],

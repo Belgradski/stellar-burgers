@@ -3,6 +3,7 @@ import {
   ingredientsInitialState
 } from '../src/services/slices';
 import reducer from '../src/services/slices/ingredients';
+import { expect } from '@jest/globals';
 
 const ingredientsMockData = [
   {
