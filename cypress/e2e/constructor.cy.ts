@@ -18,9 +18,21 @@ describe('E2E тест конструктора бургеров', () => {
 
   describe('Проверка работы модальных окон описаний ингредиентов', () => {
     describe('Проверка открытия модальных окон', () => {
-      it('Базовое открытие по карточке ингредиента', () => {
+      it('Базовое открытие по карточке ингредиента с проверкой содержимого', () => {
+        // Кликаем по первой булке и запоминаем её название
+        cy.get('[data-ingredient="bun"]:first-of-type').within(() => {
+          cy.get('p.text_type_main-default').invoke('text').as('ingredientName');
+        });
+
         cy.get('[data-ingredient="bun"]:first-of-type').click();
+
+        // Проверяем что модальное окно открылось
         cy.get('#modals').children().should('have.length', 2);
+
+        // Проверяем что в модальном окне отображается правильное название ингредиента
+        cy.get('@ingredientName').then((ingredientName) => {
+          cy.get('#modals').should('contain', ingredientName);
+        });
       });
 
       it('Модальное окно с ингредиентом будет открыто после перезагрузки страницы', () => {
