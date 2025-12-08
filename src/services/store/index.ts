@@ -22,7 +22,7 @@ export const rootReducer = combineReducers({
 });
 // Заменить на импорт настоящего редьюсера
 
-const store = configureStore({
+export const store = configureStore({
   reducer: rootReducer,
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware().concat(ordersMiddleware),
